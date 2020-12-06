@@ -6,3 +6,5 @@ endfun
 augroup Cheat
   autocmd!
 augroup END
+
+:command! Cheat :call Cheat()
