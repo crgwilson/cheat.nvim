@@ -36,4 +36,4 @@ popup (hopefully) containing your answer.
 * Make keybinds configurable
 * Optionally open query windows as splits rather than floating windows
 
-[cheatsh]:cheat.sh "cheat.sh"
+[cheatsh]:https://cheat.sh/ "https://cheat.sh/"
