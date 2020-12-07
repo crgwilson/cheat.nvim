@@ -50,6 +50,7 @@ end
 function query.newResultsWindow(results)
   local resultsBuffer = vim.api.nvim_create_buf(false, true)
 
+  vim.api.nvim_buf_set_option(resultsBuffer, "filetype", currentFileType)
   vim.api.nvim_buf_set_lines(resultsBuffer, 0, -1, false, results)
 
   local resultsWindow = window.newFloatingWindow(resultsBuffer, resultWindowConfig)
