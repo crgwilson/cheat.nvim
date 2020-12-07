@@ -69,7 +69,7 @@ function window.newFloatingWindow(buf, config)
   local windowWidth = math.floor(guiWidth - (widthPadding * 2))
   local windowHeight = math.floor(guiHeight - (heightPadding * 2))
 
-  vim.api.nvim_buf_set_option(buf, "bufhidden", "wipe")
+  vim.api.nvim_buf_set_option(buf, "bufhidden", "delete")
 
   local newWindow = vim.api.nvim_open_win(buf, true, {
     relative = "editor",
